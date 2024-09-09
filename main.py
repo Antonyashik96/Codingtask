@@ -80,6 +80,6 @@ if __name__ == "__main__":
                                         hostname= hostname, username= username, password= password)
     base_folder_path = str(RemoteFolderManager.default_host_path)+"/"+"datas"
     base_folder_path= Path(base_folder_path)
-    checkpath = 'datas/fauna2'
+    checkpath = Path('datas/fauna3')
     main(base_folder_path= base_folder_path, checkpath= checkpath,
             logger=logger, create_file= True, check_path_existance=True)

@@ -1,11 +1,11 @@
-2024-09-09 09:33:50,041 - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-09-09 09:33:50,159 - INFO - Authentication (publickey) failed.
-2024-09-09 09:33:50,185 - INFO - Authentication (publickey) failed.
-2024-09-09 09:33:50,199 - INFO - Authentication (publickey) failed.
-2024-09-09 09:33:50,218 - INFO - Authentication (password) successful!
-2024-09-09 09:33:50,415 - INFO - [chan 0] Opened sftp connection (server version 3)
-2024-09-09 09:33:50,415 - INFO - Successfully connected to antony
-2024-09-09 09:33:50,416 - INFO - Folder structure of 
+2024-09-09 09:36:16,669 - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-09-09 09:36:16,783 - INFO - Authentication (publickey) failed.
+2024-09-09 09:36:16,810 - INFO - Authentication (publickey) failed.
+2024-09-09 09:36:16,823 - INFO - Authentication (publickey) failed.
+2024-09-09 09:36:16,842 - INFO - Authentication (password) successful!
+2024-09-09 09:36:17,119 - INFO - [chan 0] Opened sftp connection (server version 3)
+2024-09-09 09:36:17,119 - INFO - Successfully connected to antony
+2024-09-09 09:36:17,119 - INFO - Folder structure of 
  [DIR] fauna
   [DIR] domestic
     [DIR] pet
@@ -19,21 +19,20 @@
   [DIR] wild
  
  to be created
-2024-09-09 09:33:50,416 - INFO - Function to create folders on the given folder path /home/antony/Music/Codingtask/datas recursively.
-2024-09-09 09:33:50,418 - INFO - Base folder /home/antony/Music/Codingtask/datas already exists.
-2024-09-09 09:33:50,420 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna no further changes required.
-2024-09-09 09:33:50,421 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic no further changes required.
-2024-09-09 09:33:50,423 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet no further changes required.
-2024-09-09 09:33:50,424 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat no further changes required.
-2024-09-09 09:33:50,426 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/persian no further changes required.
-2024-09-09 09:33:50,427 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby no further changes required.
-2024-09-09 09:33:50,428 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby/white no further changes required.
-2024-09-09 09:33:50,430 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby/white/white.py no further changes required.
-2024-09-09 09:33:50,431 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/dog no further changes required.
-2024-09-09 09:33:50,433 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/notpet no further changes required.
-2024-09-09 09:33:50,434 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/wild no further changes required.
-2024-09-09 09:33:50,435 - INFO - Check_functionality Function to checking whether datas/fauna2 exists or not.
-2024-09-09 09:33:50,441 - INFO - Check_functionality /home/antony/Music/Codingtask/datas exists
-2024-09-09 09:33:50,448 - INFO - Check_functionality /home/antony/Music/Codingtask/datas/fauna2 exists
-2024-09-09 09:33:50,450 - ERROR - Check_functionality /home/antony/Music/Codingtask/datas/fauna2 is a symbolic link
-2024-09-09 09:33:50,450 - INFO - [chan 0] sftp session closed.
+2024-09-09 09:36:17,120 - INFO - Function to create folders on the given folder path /home/antony/Music/Codingtask/datas recursively.
+2024-09-09 09:36:17,122 - INFO - Base folder /home/antony/Music/Codingtask/datas already exists.
+2024-09-09 09:36:17,123 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna no further changes required.
+2024-09-09 09:36:17,124 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic no further changes required.
+2024-09-09 09:36:17,126 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet no further changes required.
+2024-09-09 09:36:17,128 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat no further changes required.
+2024-09-09 09:36:17,130 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/persian no further changes required.
+2024-09-09 09:36:17,131 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby no further changes required.
+2024-09-09 09:36:17,132 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby/white no further changes required.
+2024-09-09 09:36:17,134 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/cat/tabby/white/white.py no further changes required.
+2024-09-09 09:36:17,135 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/pet/dog no further changes required.
+2024-09-09 09:36:17,137 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/domestic/notpet no further changes required.
+2024-09-09 09:36:17,138 - INFO - Folders present inside the path: /home/antony/Music/Codingtask/datas/fauna/wild no further changes required.
+2024-09-09 09:36:17,139 - INFO - Check_functionality Function to checking whether datas/fauna3 exists or not.
+2024-09-09 09:36:17,144 - INFO - Check_functionality /home/antony/Music/Codingtask/datas exists
+2024-09-09 09:36:17,147 - ERROR - Check_functionality /home/antony/Music/Codingtask/datas/fauna3 neither exists nor a folder
+2024-09-09 09:36:17,147 - INFO - [chan 0] sftp session closed.
