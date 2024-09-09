@@ -15,6 +15,11 @@ The folder tree architecture implemented in this code for Task-1 to create folde
 
 The same **class Node** can be used for any dynamic folder structure creation.
 
+The architecture for task 1 and task 2 that has been implemented is shown  below visually.
+
+<div style="text-align: center;">
+  <img src="./task.png" alt="Alt text" width="550"/>
+</div>
 
 **Steps to execute**\
 1. `git clone repo`
