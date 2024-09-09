@@ -1,0 +1,37 @@
+2024-09-08 22:26:46,996 - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-09-08 22:26:47,110 - INFO - Authentication (publickey) failed.
+2024-09-08 22:26:47,135 - INFO - Authentication (publickey) failed.
+2024-09-08 22:26:47,147 - INFO - Authentication (publickey) failed.
+2024-09-08 22:26:47,165 - INFO - Authentication (password) successful!
+2024-09-08 22:26:47,371 - INFO - [chan 0] Opened sftp connection (server version 3)
+2024-09-08 22:26:47,372 - INFO - Successfully connected to antony
+2024-09-08 22:26:47,373 - INFO - Folder structure of 
+ [DIR] fauna
+  [DIR] domestic
+    [DIR] pet
+      [DIR] cat
+        [DIR] persian
+        [DIR] tabby
+          [DIR] white
+            [FILE] white.py
+      [DIR] dog
+    [DIR] notpet
+  [DIR] wild
+ 
+ to be created
+2024-09-08 22:26:47,373 - INFO - Function to create folders on the given folder path /home/antony/Desktop/Plus4Data/module/datas recursively.
+2024-09-08 22:26:47,375 - INFO - Base folder /home/antony/Desktop/Plus4Data/module/datas already exists.
+2024-09-08 22:26:47,377 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna no further changes required.
+2024-09-08 22:26:47,379 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic no further changes required.
+2024-09-08 22:26:47,380 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet no further changes required.
+2024-09-08 22:26:47,381 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat no further changes required.
+2024-09-08 22:26:47,383 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/persian no further changes required.
+2024-09-08 22:26:47,384 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby no further changes required.
+2024-09-08 22:26:47,386 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white no further changes required.
+2024-09-08 22:26:47,388 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white/white.py no further changes required.
+2024-09-08 22:26:47,389 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/dog no further changes required.
+2024-09-08 22:26:47,390 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/notpet no further changes required.
+2024-09-08 22:26:47,391 - INFO - Folders present inside the path: /home/antony/Desktop/Plus4Data/module/datas/fauna/wild no further changes required.
+2024-09-08 22:26:47,392 - INFO - Check_functionality Function to checking whether fauna exists or not.
+2024-09-08 22:26:47,397 - INFO - Check_functionality /home/antony/Desktop/Plus4Data/module/datas/fauna exists
+2024-09-08 22:26:47,399 - INFO - [chan 0] sftp session closed.
