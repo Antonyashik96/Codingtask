@@ -1,8 +1,8 @@
 import logging
 from typing import Union
 from pathlib import Path
-from module.Plus4Data import Node
-from module.Plus4Data import RemoteFolderManager
+from Plus4Data import Node
+from Plus4Data import RemoteFolderManager
 
 def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path], hierarchy_of_folders_to_be_created_inside_root_folder_path: Node,\
          logger: Union[None, logging.Logger], create_file: bool, check_path_existance:bool):
