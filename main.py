@@ -4,14 +4,14 @@ from pathlib import Path
 from Plus4Data import Node
 from Plus4Data import RemoteFolderManager
 
-def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path], hierarchy_of_folders_to_be_created_inside_root_folder_path: Node,\
+def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path],
          logger: Union[None, logging.Logger], create_file: bool, check_path_existance:bool):
 
     '''
             Description:
                 main function to choose which operation to make either task1 or task2
-                task1: create folders recursively
-                task2: check existance of folder
+                task1: create folders recursively.
+                task2: check existance of folder in the give path.
             
             Args:
                 base_folder_path: The path in which the created folder has to exist.
@@ -23,24 +23,23 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path], hierar
     '''
 
     sftp_client = RemoteFolderManager.connect_to_sftp(
-        hostname="",
-        username="",
-        password="",
+        hostname="antony",
+        username="antony",
+        password="Antonio@12",
         logger=logger
     )
-    
+    #check instances of datatyes of parametres and raise TypeError if there is a mismatch
     if not isinstance(base_folder_path, (str, Path)):
             raise TypeError("The 'base_folder_path' parameter must be either a string or a Path object.")  
 
     if not isinstance(checkpath, (str, Path)):
             raise TypeError("The 'checkpath' parameter must be either a string or a Path object.") 
     if logger is not None:
-                    logger.info(f"Folder structure of \n {str(hierarchy_of_folders_to_be_created_inside_root_folder_path)} \n to be created")
+                    logger.info(f"Folder structure of \n {str(RemoteFolderManager.hierarchy_of_folders_to_be_created_inside_root_folder_path)} \n to be created")
     if create_file:
         total_number_of_files = RemoteFolderManager.create_folder_path_recursively(
             base_folder_path=base_folder_path,
-            sftp=sftp_client, 
-            hierarchy_of_folders_to_be_created_inside_root_folder_path=hierarchy_of_folders_to_be_created_inside_root_folder_path,
+            sftp=sftp_client,
             logger=logger)
         print("Total number of folders and files created", total_number_of_files)
     
@@ -73,8 +72,10 @@ if __name__ == "__main__":
         ]),
         Node('wild')
     ])
-    base_folder_path= ''
-    checkpath = ''
-    main(base_folder_path= base_folder_path, checkpath= checkpath,\
-        hierarchy_of_folders_to_be_created_inside_root_folder_path= hierarchy_of_folders_to_be_created_inside_root_folder_path\
-            ,logger=logger, create_file= True, check_path_existance=True)
+    RemoteFolderManager.set_defaults(host_path='/home/antony/Music/Codingtask',
+                                     hierarchy_of_folders_to_be_created_inside_root_folder_path=hierarchy_of_folders_to_be_created_inside_root_folder_path)
+    base_folder_path = str(RemoteFolderManager.default_host_path)+"/"+"datas"
+    base_folder_path= Path(base_folder_path)
+    checkpath = 'datas/fauna2'
+    main(base_folder_path= base_folder_path, checkpath= checkpath,
+            logger=logger, create_file= True, check_path_existance=True)
