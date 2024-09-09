@@ -79,7 +79,7 @@ if __name__ == "__main__":
                                      hierarchy_of_folders_to_be_created_inside_root_folder_path=hierarchy_of_folders_to_be_created_inside_root_folder_path,\
                                         hostname= hostname, username= username, password= password)
     base_folder_path = str(RemoteFolderManager.default_host_path)+"/"+"datas"
-    #base_folder_path= str(base_folder_path)
-    checkpath = 'datas/fauna'
+    base_folder_path= Path(base_folder_path)
+    checkpath = 'datas/fauna2'
     main(base_folder_path= base_folder_path, checkpath= checkpath,
             logger=logger, create_file= True, check_path_existance=True)
