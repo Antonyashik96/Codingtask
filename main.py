@@ -23,9 +23,6 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path],
     '''
 
     sftp_client = RemoteFolderManager.connect_to_sftp(
-        hostname="antony",
-        username="antony",
-        password="Antonio@12",
         logger=logger
     )
     #check instances of datatyes of parametres and raise TypeError if there is a mismatch
@@ -72,10 +69,15 @@ if __name__ == "__main__":
         ]),
         Node('wild')
     ])
-    RemoteFolderManager.set_defaults(host_path='/home/antony/Music/Codingtask',
-                                     hierarchy_of_folders_to_be_created_inside_root_folder_path=hierarchy_of_folders_to_be_created_inside_root_folder_path)
+    host_path='/home/antony/Music/Codingtask'
+    hostname = 'antony'
+    username = 'antony'
+    password = 'Antonio@12'
+    RemoteFolderManager.set_defaults(host_path=host_path,
+                                     hierarchy_of_folders_to_be_created_inside_root_folder_path=hierarchy_of_folders_to_be_created_inside_root_folder_path,\
+                                        hostname= hostname, username= username, password= password)
     base_folder_path = str(RemoteFolderManager.default_host_path)+"/"+"datas"
-    base_folder_path= Path(base_folder_path)
-    checkpath = 'datas/fauna2'
+    #base_folder_path= str(base_folder_path)
+    checkpath = 'datas/fauna'
     main(base_folder_path= base_folder_path, checkpath= checkpath,
             logger=logger, create_file= True, check_path_existance=True)
