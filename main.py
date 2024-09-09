@@ -23,9 +23,9 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path], hierar
     '''
 
     sftp_client = RemoteFolderManager.connect_to_sftp(
-        hostname="antony",
-        username="antony",
-        password="Antonio@12",
+        hostname="",
+        username="",
+        password="",
         logger=logger
     )
     
@@ -73,8 +73,8 @@ if __name__ == "__main__":
         ]),
         Node('wild')
     ])
-    base_folder_path= "/home/antony/Desktop/Plus4Data/module/datas"
-    checkpath = Path('fauna')
+    base_folder_path= ''
+    checkpath = ''
     main(base_folder_path= base_folder_path, checkpath= checkpath,\
         hierarchy_of_folders_to_be_created_inside_root_folder_path= hierarchy_of_folders_to_be_created_inside_root_folder_path\
             ,logger=logger, create_file= True, check_path_existance=True)

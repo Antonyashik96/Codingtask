@@ -1,11 +1,11 @@
-2024-09-09 03:36:36,526 - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
-2024-09-09 03:36:36,654 - INFO - Authentication (publickey) failed.
-2024-09-09 03:36:36,686 - INFO - Authentication (publickey) failed.
-2024-09-09 03:36:36,701 - INFO - Authentication (publickey) failed.
-2024-09-09 03:36:36,738 - INFO - Authentication (password) successful!
-2024-09-09 03:36:37,176 - INFO - [chan 0] Opened sftp connection (server version 3)
-2024-09-09 03:36:37,177 - INFO - Successfully connected to antony
-2024-09-09 03:36:37,177 - INFO - Folder structure of 
+2024-09-09 03:43:14,894 - INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+2024-09-09 03:43:15,009 - INFO - Authentication (publickey) failed.
+2024-09-09 03:43:15,036 - INFO - Authentication (publickey) failed.
+2024-09-09 03:43:15,048 - INFO - Authentication (publickey) failed.
+2024-09-09 03:43:15,067 - INFO - Authentication (password) successful!
+2024-09-09 03:43:15,223 - INFO - [chan 0] Opened sftp connection (server version 3)
+2024-09-09 03:43:15,223 - INFO - Successfully connected to antony
+2024-09-09 03:43:15,224 - INFO - Folder structure of 
  [DIR] fauna
   [DIR] domestic
     [DIR] pet
@@ -19,19 +19,19 @@
   [DIR] wild
  
  to be created
-2024-09-09 03:36:37,178 - INFO - Function to create folders on the given folder path /home/antony/Desktop/Plus4Data/module/datas recursively.
-2024-09-09 03:36:37,182 - INFO - Created base folder: /home/antony/Desktop/Plus4Data/module/datas
-2024-09-09 03:36:37,184 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna
-2024-09-09 03:36:37,186 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic
-2024-09-09 03:36:37,188 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet
-2024-09-09 03:36:37,191 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat
-2024-09-09 03:36:37,193 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/persian
-2024-09-09 03:36:37,195 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby
-2024-09-09 03:36:37,198 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white
-2024-09-09 03:36:37,204 - INFO - Created file: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white/white.py
-2024-09-09 03:36:37,207 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/dog
-2024-09-09 03:36:37,211 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/notpet
-2024-09-09 03:36:37,213 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/wild
-2024-09-09 03:36:37,214 - INFO - Check_functionality Function to checking whether fauna exists or not.
-2024-09-09 03:36:37,224 - INFO - Check_functionality /home/antony/Desktop/Plus4Data/module/datas/fauna exists
-2024-09-09 03:36:37,227 - INFO - [chan 0] sftp session closed.
+2024-09-09 03:43:15,224 - INFO - Function to create folders on the given folder path /home/antony/Desktop/Plus4Data/module/datas recursively.
+2024-09-09 03:43:15,228 - INFO - Created base folder: /home/antony/Desktop/Plus4Data/module/datas
+2024-09-09 03:43:15,230 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna
+2024-09-09 03:43:15,231 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic
+2024-09-09 03:43:15,233 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet
+2024-09-09 03:43:15,235 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat
+2024-09-09 03:43:15,237 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/persian
+2024-09-09 03:43:15,239 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby
+2024-09-09 03:43:15,242 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white
+2024-09-09 03:43:15,246 - INFO - Created file: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/cat/tabby/white/white.py
+2024-09-09 03:43:15,248 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/pet/dog
+2024-09-09 03:43:15,250 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/domestic/notpet
+2024-09-09 03:43:15,252 - INFO - Created folder: /home/antony/Desktop/Plus4Data/module/datas/fauna/wild
+2024-09-09 03:43:15,252 - INFO - Check_functionality Function to checking whether fauna exists or not.
+2024-09-09 03:43:15,260 - INFO - Check_functionality /home/antony/Desktop/Plus4Data/module/datas/fauna exists
+2024-09-09 03:43:15,262 - INFO - [chan 0] sftp session closed.

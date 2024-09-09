@@ -310,7 +310,7 @@ class RemoteFolderManager:
             raise TypeError("The 'logger' parameter must be of type logging.Logger.") 
          
         path_list = cls.path_to_list(base_path)
-        current_path_in_server='/home/antony/Desktop/Plus4Data/module/datas'
+        current_path_in_server=''
         for folder in path_list:
             current_path_in_server = Path(current_path_in_server) / folder
             try:
@@ -365,5 +365,3 @@ class RemoteFolderManager:
                 logging.info(description_str+f" Function to checking whether {folder_path} exists or not.")
         path_exists = cls.check_remote_path_exists(sftp, str(folder_path),logger,description_str)
         return path_exists
-
-
