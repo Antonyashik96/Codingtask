@@ -16,7 +16,6 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path],
             Args:
                 base_folder_path: The path in which the created folder has to exist.
                 checkpath: The path in which the existance of a folder operation (task2) has to be performed.
-                hierarchy_of_folders_to_be_created_inside_root_folder_path: The Node instance representing the folder or file to be created.
                 logger: Logger for logging purposes, or None if not needed.
                 create_file: set True if task 1 has to be done or False
                 check_path_existance: set True if task 2 has to be done or False
@@ -33,6 +32,8 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path],
             raise TypeError("The 'checkpath' parameter must be either a string or a Path object.") 
     if logger is not None:
                     logger.info(f"Folder structure of \n {str(RemoteFolderManager.hierarchy_of_folders_to_be_created_inside_root_folder_path)} \n to be created")
+    
+    #if create_file is true the task of creating folders inside remote host using recusrsion gets executed
     if create_file:
         total_number_of_files = RemoteFolderManager.create_folder_path_recursively(
             base_folder_path=base_folder_path,
@@ -40,6 +41,7 @@ def main(base_folder_path: Union[str, Path], checkpath: Union[str, Path],
             logger=logger)
         print("Total number of folders and files created", total_number_of_files)
     
+    #if check_path_existance is true the task of checking the existance of regular folder gets executed
     if check_path_existance:
         path_exists = RemoteFolderManager.is_path_a_regular_folder(
             folder_path=checkpath,

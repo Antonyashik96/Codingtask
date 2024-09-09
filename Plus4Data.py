@@ -33,6 +33,17 @@ class RemoteFolderManager:
     @classmethod
     def set_defaults(cls, host_path: typing.Optional[str] = None, hierarchy_of_folders_to_be_created_inside_root_folder_path: Node=None,\
                       hostname:str=None, username:str=None, password:str=None):
+        '''
+            Function to update the default values inside the class.
+            Args:
+            host_path: The path of the remote host in which the operations are to be performed.
+            hierarchy_of_folders_to_be_created_inside_root_folder_path: The hierarchical structure of folders, subfolders that are 
+            to be created inside host_path. which is initialized using Node class. 
+
+            hostname: The hostname or IP address of the remote server.
+            username: The username to log in to the remote server.
+            password: The password for the remote server.
+        '''
         # Update only the provided defaults
         if host_path is not None:
             cls.default_host_path = host_path
@@ -54,10 +65,6 @@ class RemoteFolderManager:
         Establish an SFTP connection to the remote host.
         
         Args:
-            hostname: The hostname or IP address of the remote server.
-            username: The username to log in to the remote server.
-            password: The password for the remote server.
-            port: The SSH port to use for the connection. Defaults to 22.
             logger: Logger for logging purposes, or None if not needed.
 
         Returns:
@@ -162,12 +169,14 @@ class RemoteFolderManager:
         Args:
             sftp: The SFTP client providing connection to the remote host.
             base_folder_path: The base path where folders/files will be created.
-            hierarchy_of_folders_to_be_created_inside_root_folder_path : The Node instance representing the tree structure of folder or file to be created.
+            hierarchy_of_folders_to_be_created_inside_root_folder_path: The hierarchical structure of folders, subfolders that are 
+            to be created inside base folder path. which is initialized using Node class. 
             logger: Logger for logging purposes, or None if not needed.
 
         Returns:
             int: The total number of folders and files created.
         """
+        #check instances of datatyes of parametres and raise TypeError if there is a mismatch
         if not isinstance(base_folder_path, (str, Path)):
             raise TypeError("The 'path' parameter must be either a string or a Path object.")   
         
@@ -211,7 +220,7 @@ class RemoteFolderManager:
                     logger.error(f"Folder already exists or cannot be created: {folder_path} - {e}")
                 raise
 
-            # Recursively create subfolders/files
+            # Recursively create subfolders
             for subfolder in hierarchy_of_folders_to_be_created_inside_root_folder_path.subfolders:
                 number_of_folders_and_files_created += cls.create_folders_from_node_tree_recursively(
                     sftp, folder_path, subfolder, logger
@@ -232,8 +241,6 @@ class RemoteFolderManager:
             Args:
                 base_folder_path: The path in which the folders has to be created.
                 sftp: The SFTP client providing connection to the remote host.
-                hierarchy_of_folders_to_be_created_inside_root_folder_path: The hierarchical structure of folders, subfolders that are 
-                to be created inside base folder path. which is initialized using Node class. 
                 logger: logging.Logger if logging is wished 'None' otherwise.
 
             Returns:
