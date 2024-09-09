@@ -12,7 +12,8 @@ The folder tree architecture implemented in this code for Task-1 to create folde
 <div style="text-align: center;">
   <img src="./folder_tree.png" alt="Alt text" width="550"/>
 </div>
-The same **class Node** can be used for any type of hierarchical folder creation.
+
+The same **class Node** can be used for any dynamic folder structure creation.
 
 
 **Steps to execute**\
